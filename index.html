@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Toe Textiles – Computer System Survey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Green Toe Textiles – Computer System Survey</h2>
+  <form id="surveyForm">
+    
+    <label>1. How long have you used the current computer system?</label><br>
+    <select name="usageLength" required>
+      <option value="">--Select--</option>
+      <option>Less than 1 year</option>
+      <option>1–3 years</option>
+      <option>3–5 years</option>
+      <option>More than 5 years</option>
+    </select><br><br>
+
+    <label>2. How often does the current system experience downtime?</label><br>
+    <input type="radio" name="downtime" value="Never" required> Never
+    <input type="radio" name="downtime" value="Rarely"> Rarely
+    <input type="radio" name="downtime" value="Sometimes"> Sometimes
+    <input type="radio" name="downtime" value="Often"> Often
+    <input type="radio" name="downtime" value="Very Often"> Very Often
+    <br><br>
+
+    <label>3. Who repairs the system when issues occur?</label><br>
+    <input type="text" name="repairPerson" placeholder="Name or department"><br><br>
+
+    <label>3a. How satisfied are you with the response time?</label><br>
+    <input type="radio" name="repairSatisfaction" value="Very Satisfied" required> Very Satisfied
+    <input type="radio" name="repairSatisfaction" value="Satisfied"> Satisfied
+    <input type="radio" name="repairSatisfaction" value="Neutral"> Neutral
+    <input type="radio" name="repairSatisfaction" value="Dissatisfied"> Dissatisfied
+    <input type="radio" name="repairSatisfaction" value="Very Dissatisfied"> Very Dissatisfied
+    <br><br>
+
+    <label>4. Have you ever suggested an improvement that was implemented? If yes, describe it:</label><br>
+    <textarea name="implementedSuggestion"></textarea><br><br>
+
+    <label>5. Have you ever suggested an improvement that was not implemented? If yes, what was it?</label><br>
+    <textarea name="unimplementedSuggestion"></textarea><br><br>
+
+    <label>6. Which devices do you use with the system?</label><br>
+    <input type="checkbox" name="devices" value="Monitor"> Monitor
+    <input type="checkbox" name="devices" value="Printer"> Printer
+    <input type="checkbox" name="devices" value="Scanner"> Scanner
+    <input type="checkbox" name="devices" value="Other"> Other
+    <br><br>
+
+    <label>7. How many employees at your branch regularly access the database?</label><br>
+    <input type="number" name="dbUsers" min="0" required><br><br>
+
+    <label>8. Are there employees not using the system who would like to? If yes, how many?</label><br>
+    <input type="number" name="potentialUsers" min="0"><br><br>
+
+    <label>9. What improvements would you like in the new system?</label><br>
+    <textarea name="newImprovements"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+    <button type="button" id="downloadBtn">Download Responses</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
